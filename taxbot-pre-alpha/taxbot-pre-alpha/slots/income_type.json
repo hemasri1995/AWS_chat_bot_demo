@@ -1,0 +1,32 @@
+{
+    "name": "IncomeType",
+    "description": "Type of income tax being paid",
+    "enumerationValues": [
+        {
+            "value": "individual",
+            "synonyms": [
+                "self-employed"
+            ]
+        },
+        {
+            "value": "trusts",
+            "synonyms": [
+                "trust"
+            ]
+        },
+        {
+            "value": "business"
+        },
+        {
+            "value": "incorporated business"
+        },
+        {
+            "value": "self"
+        }
+    ],
+    "lastUpdatedDate": 1583715889.948,
+    "createdDate": 1583715889.948,
+    "version": "1",
+    "checksum": "daaab4a3-80de-4e3b-a9da-d5c3059e2431",
+    "valueSelectionStrategy": "ORIGINAL_VALUE"
+}

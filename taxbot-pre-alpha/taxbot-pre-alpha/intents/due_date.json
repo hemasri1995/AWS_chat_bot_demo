@@ -1,0 +1,43 @@
+{
+    "name": "CheckBalanceDueDate",
+    "slots": [
+        {
+            "name": "BalanceType",
+            "slotConstraint": "Required",
+            "slotType": "balance_type",
+            "slotTypeVersion": "1",
+            "valueElicitationPrompt": {
+                "messages": [
+                    {
+                        "contentType": "PlainText",
+                        "content": "What type of balance would you like to pay?  (Sales, Income or Payroll)"
+                    }
+                ],
+                "maxAttempts": 3,
+                "responseCard": "{\"version\":1,\"contentType\":\"application/vnd.amazonaws.card.generic\",\"genericAttachments\":[]}"
+            },
+            "priority": 0,
+            "sampleUtterances": [
+                "I want to pay {BalanceType}",
+                "I'm paying {BalanceType}"
+            ]
+        }
+    ],
+    "sampleUtterances": [
+        "When is my balance Due",
+        "When must I pay my balance",
+        "When do I pay",
+        "When do I need to pay"
+    ],
+    "fulfillmentActivity": {
+        "type": "CodeHook",
+        "codeHook": {
+            "uri": "arn:aws:lambda:us-east-1:328399320994:function:taxbot-router",
+            "messageVersion": "1.0"
+        }
+    },
+    "lastUpdatedDate": 1583711484.925,
+    "createdDate": 1583711484.925,
+    "version": "5",
+    "checksum": "a2cb8ab3-5f62-452e-a707-fff4ae7f37ab"
+}

@@ -1,0 +1,47 @@
+{
+    "name": "balance_type",
+    "description": "Type of balance being paid",
+    "enumerationValues": [
+        {
+            "value": "income"
+        },
+        {
+            "value": "payroll tax"
+        },
+        {
+            "value": "Income tax",
+            "synonyms": [
+                "income"
+            ]
+        },
+        {
+            "value": "Sales tax",
+            "synonyms": [
+                "sales"
+            ]
+        },
+        {
+            "value": "sales tax"
+        },
+        {
+            "value": "income tax"
+        },
+        {
+            "value": "Payroll tax",
+            "synonyms": [
+                "payroll"
+            ]
+        },
+        {
+            "value": "payroll"
+        },
+        {
+            "value": "sales"
+        }
+    ],
+    "lastUpdatedDate": 1583713642.216,
+    "createdDate": 1583713642.216,
+    "version": "2",
+    "checksum": "ebc252e3-df72-44e3-a0cd-71bc9b0ff23b",
+    "valueSelectionStrategy": "ORIGINAL_VALUE"
+}

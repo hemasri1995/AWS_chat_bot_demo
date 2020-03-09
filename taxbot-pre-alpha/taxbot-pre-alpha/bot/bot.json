@@ -1,0 +1,47 @@
+{
+    "name": "taxbot_dev",
+    "intents": [
+        {
+            "intentName": "IncomeTaxChoice",
+            "intentVersion": "2"
+        },
+        {
+            "intentName": "CheckBalanceDueDate",
+            "intentVersion": "5"
+        }
+    ],
+    "clarificationPrompt": {
+        "messages": [
+            {
+                "contentType": "PlainText",
+                "content": "I'm sorry, I didn't hear that. Can you repeat what you just said?"
+            },
+            {
+                "contentType": "PlainText",
+                "content": "Can you say that again?"
+            }
+        ],
+        "maxAttempts": 3
+    },
+    "abortStatement": {
+        "messages": [
+            {
+                "contentType": "PlainText",
+                "content": "I don't understand. Can you try again?"
+            },
+            {
+                "contentType": "PlainText",
+                "content": "I'm sorry, I don't understand."
+            }
+        ]
+    },
+    "status": "READY",
+    "lastUpdatedDate": 1583716075.149,
+    "createdDate": 1583716062.078,
+    "idleSessionTTLInSeconds": 1800,
+    "voiceId": "Joanna",
+    "checksum": "b0c41e14-2d41-4bc8-9ac1-f64f5ef574a7",
+    "version": "2",
+    "locale": "en-US",
+    "childDirected": false
+}

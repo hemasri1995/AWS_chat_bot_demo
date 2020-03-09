@@ -1,0 +1,43 @@
+{
+    "name": "IncomeTaxChoice",
+    "slots": [
+        {
+            "name": "IncomeType",
+            "slotConstraint": "Required",
+            "slotType": "IncomeType",
+            "slotTypeVersion": "1",
+            "valueElicitationPrompt": {
+                "messages": [
+                    {
+                        "contentType": "PlainText",
+                        "content": "What type of income tax? (Individual, Business or Trusts?)"
+                    }
+                ],
+                "maxAttempts": 3,
+                "responseCard": "{\"version\":1,\"contentType\":\"application/vnd.amazonaws.card.generic\",\"genericAttachments\":[]}"
+            },
+            "priority": 0,
+            "sampleUtterances": [
+                "I want to pay {IncomeType}",
+                "I'm paying {IncomeType}"
+            ]
+        }
+    ],
+    "sampleUtterances": [
+        "When is my income tax due",
+        "When must I pay my income tax",
+        "When do I pay income taxes",
+        "When do I need to pay income tax"
+    ],
+    "fulfillmentActivity": {
+        "type": "CodeHook",
+        "codeHook": {
+            "uri": "arn:aws:lambda:us-east-1:328399320994:function:taxbot-router",
+            "messageVersion": "1.0"
+        }
+    },
+    "lastUpdatedDate": 1583715913.397,
+    "createdDate": 1583715913.397,
+    "version": "2",
+    "checksum": "f031265c-9c7d-4aa7-b5a7-82842f8eabde"
+}
